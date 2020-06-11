@@ -1,0 +1,28 @@
+.shapes-container{
+  padding: 0 5px;
+  display: grid;
+  grid-template-columns: auto auto auto;
+  border-left: 1px solid dodgerblue;
+  height: 90px;
+  overflow: auto;
+}
+.shape-container{
+  margin: 2px;
+  width: 45px;
+  height: 25px;
+  background-color: dodgerblue;
+}
+img{
+  height: 25px;
+  width: 45px;
+
+}
+img:hover{
+  cursor: pointer;
+}
+.shape-active {
+  width: 42;
+  height: 23px;
+  border-left: 2px solid green;
+  border-top: 2px solid green;
+}

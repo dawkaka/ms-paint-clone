@@ -1,0 +1,153 @@
+
+.home-panel-container{
+  display: flex;
+  border-bottom: 1px solid dodgerblue;
+}
+.line-size-container{
+  display: block;
+  border-left: 1px solid dodgerblue;
+  height: 70px;
+  position: relative;
+  padding: 10px 0;
+}
+.line-container{
+  display: flex;
+}
+.line-type-big-container{
+  display: flex;
+  margin: 5px;
+}
+.line-type-container-normal {
+  position: relative;
+  margin-left: 7px;
+  border: 1.5px solid dodgerblue;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+}
+.line-type-container-dashed {
+  position: relative;
+  margin-left: 7px;
+  border: 1.5px dashed dodgerblue;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+}
+.line-type{
+  position: absolute;
+  opacity: 0;
+  margin: -1px 0 0 -1px;
+  z-index: 1;
+}
+.line-type:hover {
+  cursor: pointer;
+}
+.dip {
+  background-color: dodgerblue;
+  margin-left: 2px;
+  margin-top: 2px;
+  width: 0;
+  height: 0;
+  border-radius: 50%;
+  opacity: 0;
+  position: absolute;
+  transition: all .3s;
+}
+.line-type:checked + .dip {
+  opacity: 1;
+  width: 5px;
+  height: 5px;
+}
+#dash-line-slider{
+  width: 45px;
+  height: 0;
+  border: 2px dashed #d3d3d3;
+  position: relative;
+  appearance: none;
+  margin-left: 5px;
+  outline: none;
+}
+.line-display{
+  margin: 0;
+  padding: 0;
+  font-size: 12px;
+}
+#line-size-slider{
+  margin-left: 4px;
+  width: 50px;
+  height: 5px;
+  background: #d3d3d3;
+  position: relative;
+  appearance: none;
+  border: none;
+  outline: none;
+}
+
+.slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  background: dodgerblue;
+  height: 15px;
+  width: 7px;
+  border-radius: 50%;
+}
+.color-container {
+  padding: 7px 8px;
+  display: flex;
+  margin: 0;
+  border-left: 1px solid dodgerblue;
+
+}
+.active-colors {
+  display: grid;
+  grid-template-columns: auto auto;
+}
+.active-color-container p {
+  align-self: center;
+  justify-content: center;
+  font-size: 12px;
+  font-weight: bold;
+  margin: 0;
+}
+.active-color-container{
+  margin-right: 10px;
+  justify-content: center;
+}
+.active-color {
+  height: 30px;
+  width: 30px;
+}
+.selected-active {
+  height: 28px;
+  width: 28px;
+  border: 1px solid dodgerblue;
+}
+.active-color:hover{
+  cursor: pointer;
+}
+.used-colors-container {
+  display: inline-grid;
+  grid-template-columns: auto auto auto auto auto auto auto auto;
+  width: 198px;
+  height: 75px;
+  overflow-y: auto;
+  padding: 0;
+  margin: 0;
+}
+.used-color {
+  margin: 0;
+  cursor: pointer;
+}
+.used-color:hover{
+  transform:scale(1.1);
+}
+.color-picker-container {
+  height: 75px;
+  width: 75px;
+  overflow-x: hidden;
+  overflow-y: hidden;
+}
+.color-picker-container p {
+  margin: 0;
+  padding: 0;
+  font-size: 12px;
+}
